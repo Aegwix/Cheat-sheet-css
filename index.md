@@ -67,3 +67,28 @@ La déclaration `!important` force l'application d'une règle, même si une autr
 ```css
   color: red !important;
 ```
+<br>
+
+# 🌱 Comprendre l'héritage en CSS
+
+En CSS, certaines propriétés sont **automatiquement héritées** par les éléments enfants depuis leur parent.
+
+## 🧬 Exemple de propriétés héritables :
+- `color`
+- `font-family`
+- `font-size`
+- `line-height`
+- `text-align`
+- `visibility`
+
+## ❌ Non héritées par défaut :
+Des propriétés comme `margin`, `padding`, `border`, `background`, etc., **ne sont pas héritées** automatiquement.
+
+---
+
+## ✅ Forcer l’héritage
+On peut forcer un élément à hériter une propriété avec la valeur `inherit`.
+
+```css
+h2 {color: inherit;}
+```
