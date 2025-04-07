@@ -42,4 +42,28 @@ Ajoute le lien dans la section `<head>` de ton document pour importer la police.
 ### 4. Utiliser la police dans ton CSS
 Déclare la police avec `font-family` dans ton fichier CSS.
 
+<br>
 
+# 🧩 Comprendre la notion de cascade en CSS
+
+La **cascade** est le mécanisme utilisé par le navigateur pour déterminer **quelle règle CSS appliquer** lorsqu’il y a plusieurs règles en conflit.
+
+## 📌 Trois principes de la cascade :
+
+#### 1. **Spécificité**
+Plus un sélecteur est précis, plus il a de poids.
+
+- Exemple de poids :
+  - `#id` → très spécifique
+  - `.classe` → moyennement spécifique
+  - `element` → peu spécifique
+
+#### 2. **Ordre d’apparition**
+Si deux règles ont la même spécificité, la dernière lue par le navigateur sera appliquée.
+
+#### 3. **Importance**
+La déclaration `!important` force l'application d'une règle, même si une autre est plus spécifique.
+
+```css
+  color: red !important;
+```
