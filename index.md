@@ -92,3 +92,37 @@ On peut forcer un élément à hériter une propriété avec la valeur `inherit`
 ```css
 h2 {color: inherit;}
 ```
+
+<br>
+
+# 📦 Comprendre le fonctionnement de Flexbox
+
+**Flexbox** est une méthode CSS pour organiser, aligner et distribuer les éléments dans un conteneur, même avec des tailles dynamiques.
+
+## Principes de base :
+
+- **`display: flex`** : Active Flexbox sur le conteneur.
+- **`flex-direction`** : Définit la direction des éléments (`row`, `column`, `row-reverse`, `column-reverse`).
+- **`justify-content`** : Aligne les éléments sur l'axe principal (horizontal par défaut) :
+  - `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `space-evenly`.
+- **`align-items`** : Aligne les éléments sur l'axe secondaire (vertical par défaut) :
+  - `flex-start`, `flex-end`, `center`, `baseline`, `stretch`.
+- **`flex-wrap`** : Permet de faire passer les éléments à la ligne :
+  - `wrap` (les éléments passent à la ligne), `nowrap` (ils restent sur la même ligne).
+
+## Propriétés des éléments enfants :
+
+- **`flex-grow`** : Contrôle la capacité d’un élément à grandir pour remplir l’espace.
+- **`flex-shrink`** : Contrôle la capacité d’un élément à rétrécir si nécessaire.
+- **`flex-basis`** : Définit la taille initiale de l'élément avant toute répartition de l’espace.
+
+## Raccourci :
+
+- **`flex`** combine `flex-grow`, `flex-shrink` et `flex-basis` en une seule ligne.
+
+---
+
+## Résumé :
+- Flexbox est utilisé pour disposer des éléments de façon flexible et adaptable.
+- Utilise `display: flex` pour activer, `flex-direction` pour la disposition, et `justify-content` + `align-items` pour l'alignement des éléments.
+
