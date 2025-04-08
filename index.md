@@ -126,3 +126,25 @@ h2 {color: inherit;}
 - Flexbox est utilisé pour disposer des éléments de façon flexible et adaptable.
 - Utilise `display: flex` pour activer, `flex-direction` pour la disposition, et `justify-content` + `align-items` pour l'alignement des éléments.
 
+<br>
+
+# 📦 Comprendre CSS grid
+
+## 🧱 1. Le concept de base
+CSS Grid te permet de diviser un conteneur en lignes et colonnes (un peu comme un tableau) et de placer les éléments enfants (les "grid items") à l’intérieur de cette grille.
+```CSS
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+```
+## 🎯 Utiliser CSS Grid
+
+### 🧱 1. Activer la grille
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
