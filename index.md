@@ -147,4 +147,36 @@ CSS Grid te permet de diviser un conteneur en lignes et colonnes (un peu comme u
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
+} 
+```
+
+### 📐 2. Colonnes & Lignes
+```CSS
+grid-template-columns: 200px 1fr 2fr;
+grid-template-rows: 100px auto 100px;
+```
+
+### 🧩 3. Positionner un élément
+```CSS
+.item1 {
+  grid-column: 1 / 3; /* De la colonne 1 à 3 (occupe 2 colonnes) */
+  grid-row: 1 / 2;
 }
+```
+
+### 🔠 4. Zones nommées (grid-template-areas)
+```Css
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+}
+
+.header  { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main    { grid-area: main; }
+.footer  { grid-area: footer; }
+```
