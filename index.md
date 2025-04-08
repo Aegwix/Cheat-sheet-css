@@ -180,3 +180,8 @@ grid-template-rows: 100px auto 100px;
 .main    { grid-area: main; }
 .footer  { grid-area: footer; }
 ```
+
+### 📱 5. Responsive automatique
+```CSS
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+```
